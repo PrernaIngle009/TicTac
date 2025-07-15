@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #1a2a32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+.container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(34, 125, 161, 0.288);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: -40px;
+}
+
+.turn {
+  background-color: #233a47;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: default;
+}
+
+.reset {
+  background-color: #ccc;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #000;
+}
+
+.reset:hover {
+  background-color: #1a2a32;
+  transition: 0.3s all ease-in;
+  color: white;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.cell {
+  background-color: #22313d;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  font-size: 36px;
+  color: #00c2c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 20px #00c2c2;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.score {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.score span {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  margin-top: 4px;
+}
+
+.score.x {
+  background-color: #14bdac;
+}
+
+.score.ties {
+  background-color: #a8bfc9;
+  color: #000;
+}
+
+.score.o {
+  background-color: #53f115;
+}
+
+.winner {
+  width: 100%;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.349);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+  display: none;
+}
+
+.winner img {
+  width: 90px;
+}
+
+@media (max-width: 400px) {
+  .winner {
+    font-size: 20px;
+  }
+
+  .winner img {
+    width: 40px;
+  }
+}
