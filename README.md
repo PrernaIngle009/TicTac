@@ -1,5 +1,6 @@
 🎮 Tic Tac Toe Game
 A fun and modern Tic Tac Toe game built using HTML, CSS, and JavaScript. Play with a friend, track scores, and enjoy the clean UI!
+
 ✨ Features
 ✅ Two Player Mode – Alternate turns between X and O.
 
@@ -11,8 +12,11 @@ A fun and modern Tic Tac Toe game built using HTML, CSS, and JavaScript. Play wi
     Wins for X
     Wins for O 
     Number of ties
+    
 🎨 Responsive & Clean UI – Dark mode-friendly interface with vibrant buttons.
+
 [🔗 Live Demo](https://prernaingle009.github.io/TicTac/)
+
 🛠 Tech Stack
 HTML5 – for structure
 CSS3 – for styling
